@@ -41,3 +41,55 @@
 
 2. Ако избираш инсталация, следвай инструкциите на екрана. Ако не си сигурен как да избираш дяловете, можеш да използваш опцията за **Erase disk and install Ubuntu**, но се увери, че имаш резервни копия на важните си файлове.
 
+
+# Ръководство за инсталиране на Docker в Ubuntu
+
+Това ръководство ще ви помогне да инсталирате **Docker Engine** и **Docker Compose** на Ubuntu (поддържа Ubuntu 20.04, 22.04 и 24.04).
+
+---
+
+## 📌 1. Подготовка на системата
+
+Първо обновяваме пакетите:
+
+```bash
+sudo apt update
+sudo apt upgrade -y
+
+
+sudo apt install -y ca-certificates curl gnupg lsb-release
+
+### Инсталирайте нужните зависимости:
+
+sudo apt install -y ca-certificates curl gnupg lsb-release
+
+### Добавяне на Docker GPG ключ
+
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | \
+sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+
+### Добавяне на Docker repository:
+
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] \
+  https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+"
+
+### Инсталиране на Docker:
+
+sudo apt update
+sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+### Проверка на Docker:
+
+sudo systemctl status docker
+
+
+### Стартирайте тестов контейнер:
+
+sudo docker run hello-world
+
+
