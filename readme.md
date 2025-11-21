@@ -58,65 +58,29 @@ sudo apt upgrade -y
 
 ```
 
+### Изтегляме Ollama
+
 ```bash
-sudo apt install -y ca-certificates curl gnupg lsb-release
+curl -fsSL https://ollama.com/install.sh | sh 
 ```
 
-### Инсталирайте нужните зависимости:
+### Инсталираме модела (може и друг):
 
 ```bash
-
-sudo apt install -y ca-certificates curl gnupg lsb-release
-
-```
-
-### Добавяне на Docker GPG ключ
-
-```bash
-
-sudo install -m 0755 -d /etc/apt/keyrings
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | \
-sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-sudo chmod a+r /etc/apt/keyrings/docker.gpg
-
-```
-
-### Добавяне на Docker repository:
-
-```bash
-
-echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] \
-  https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | \
-  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-"
-
-```
-
-### Инсталиране на Docker:
-
-```bash
-
-sudo apt update
-sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-
-```
-
-### Проверка на Docker:
-
-```bash
-
-sudo systemctl status docker
-
+ollama run gemma3
 ```
 
 
-### Стартирайте тестов контейнер:
+### Исналираме уеб интерфейс (за да имаме удобен инструмент за администриране) url https://github.com/open-webui/open-webui (подробна документация) Трябва да имате инсталиран python (по-подразбиране в линукс го има):
 
 ```bash
-
-sudo docker run hello-world
-
+pip install open-webui
 ```
+##### Стартираме уеб интерфейса:
+
+```bash 
+open-webui serve
+```
+ще се отвори http://localhost:8080 
 
 
