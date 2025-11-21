@@ -90,7 +90,7 @@ pip install open-webui
 ```bash 
 open-webui serve
 ```
-може да се отвори:  [http://localhost:8080]
+може да се отвори:  http://localhost:8080
 
 Ако всичко е минало успешно ще имаге инсталиран уеб интерфейс с модела gemma3
 
