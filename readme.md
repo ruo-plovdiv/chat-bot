@@ -1,16 +1,23 @@
 ### ChatBot ###
 
-# Ръководство за инсталиране на Ubuntu с Rufus
+# Ръководство за инсталиране на Ubuntu или Linux Mint с Rufus
 
 Следвай стъпките по-долу, за да създадеш бутващ USB диск и да инсталираш Ubuntu на компютъра си.
 
 ## 1. Изтегляне на Rufus
 - Изтегли [Rufus](https://rufus.ie/), който ще използваме за създаване на бутващия USB диск.
 
-## 2. Изтегляне на Ubuntu
+## Опционално
+
+### 2. Изтегляне на Ubuntu
 - Отиди на официалния сайт на Ubuntu: [https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop).
 - Избери версия с **LTS (Long Term Support)**. Това е версия с дългосрочна поддръжка и е препоръчителна за начинаещи.
 - Изтегли ISO файла на Ubuntu.
+
+## Или
+
+### Изтегляне на Linux Mint
+- Отиди на официалния сайт на Linux Mint: [https://linuxmint.com/download.php] (https://linuxmint.com/download.php)
 
 ## 3. Подготовка на USB устройството
 1. Включи USB устройството в компютъра си.
