@@ -10,14 +10,14 @@
 ## Опционално
 
 ### Изтегляне на Ubuntu
-- Отиди на официалния сайт на Ubuntu: [https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop).
+- Отиди на официалния сайт на Ubuntu: [https://ubuntu.com/download/desktop]
 - Избери версия с **LTS (Long Term Support)**. Това е версия с дългосрочна поддръжка и е препоръчителна за начинаещи.
 - Изтегли ISO файла на Ubuntu.
 
 ## Или
 
 ### Изтегляне на Linux Mint
-- Отиди на официалния сайт на Linux Mint: [https://linuxmint.com/download.php] (https://linuxmint.com/download.php)
+- Отиди на официалния сайт на Linux Mint: [https://linuxmint.com/download.php] 
 
 тук зависи кой интерфейс ще ви е по-удобен
 
